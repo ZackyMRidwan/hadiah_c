@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2a0a24" />
+  <title>Hadiah Special untuk Suci 💗</title>
+  <meta property="og:title" content="Ada hadiah special untuk Suci 💗" />
+  <meta property="og:description" content="Buka hadiahnya ya..." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- gradient kelopak (dipakai bersama oleh semua bunga) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="pg1" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff5c9d"/><stop offset=".55" stop-color="#ff8fbd"/><stop offset="1" stop-color="#ffd3e5"/></linearGradient>
+      <linearGradient id="pg2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#ff3d8b"/><stop offset=".5" stop-color="#ff77ae"/><stop offset="1" stop-color="#ffc1da"/></linearGradient>
+      <linearGradient id="pg3" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8307e"/><stop offset=".5" stop-color="#ff5fa2"/><stop offset="1" stop-color="#ffb0d0"/></linearGradient>
+      <linearGradient id="pgIn" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#d81b72"/><stop offset="1" stop-color="#ff7fb5"/></linearGradient>
+      <radialGradient id="pgCore" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff0f6"/><stop offset=".6" stop-color="#ffb3d1"/><stop offset="1" stop-color="#ff7fb5"/></radialGradient>
+      <linearGradient id="stemG" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#1f7a57"/><stop offset="1" stop-color="#5fd39a"/></linearGradient>
+    </defs>
+  </svg>
+
+  <div class="bg"></div>
+  <div class="stars" id="stars"></div>
+  <div class="orb orb--1"></div><div class="orb orb--2"></div>
+
+  <!-- kelopak jatuh -->
+  <canvas id="petals"></canvas>
+
+  <!-- bunga -->
+  <main class="garden" id="garden" aria-hidden="true"></main>
+
+  <!-- layar pembuka -->
+  <section class="intro" id="intro">
+    <h1 class="hello" aria-label="Hello Suci">
+      <span class="hello__line" id="helloA"></span>
+      <span class="hello__name" id="helloB"></span>
+    </h1>
+    <p class="sub">Ada hadiah special buat kamu 🎁</p>
+    <button class="open" id="openBtn" type="button">
+      <span>Buka Hadiah</span><i aria-hidden="true">💗</i>
+    </button>
+  </section>
+
+  <!-- pesan setelah bunga mekar -->
+  <section class="message" id="message">
+    <h2>Untuk Suci</h2>
+    <p>Maaf yaaa wkwkwk</p>
+    <small>sentuh layar untuk menebar kelopak 🌸</small>
+  </section>
+
+  <button class="sound" id="soundBtn" type="button" aria-label="Matikan / nyalakan musik" hidden>🔊</button>
+
+  <audio id="bgm" src="music/die-with-a-smile.mp3" loop preload="auto" playsinline></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
